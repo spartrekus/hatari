@@ -734,6 +734,15 @@ void Keymap_KeyDown(SDL_keysym *sdlkey)
 	int symkey = sdlkey->sym;
 	int modkey = sdlkey->mod;
 
+	
+	
+   if (symkey == SDLK_ESCAPE )
+        exit( 0 );
+	
+	     
+	
+	
+	
 	LOG_TRACE(TRACE_KEYMAP, "key down: sym=%i scan=%i mod=0x%x\n", symkey,
 	          sdlkey->scancode, modkey);
 
